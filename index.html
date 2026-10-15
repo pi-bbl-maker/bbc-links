@@ -23,7 +23,7 @@
       color: var(--text-main);
       display: flex;
       justify-content: center;
-      padding: 28px 16px 44px;
+      padding: 24px 16px 40px;
     }
 
     .container {
@@ -35,25 +35,25 @@
       gap: 12px;
     }
 
-    /* Multi-Logo Header */
+    /* 4-Logo Header Grid */
     .header {
       width: 100%;
       text-align: center;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .logos-container {
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 16px;
-      margin-bottom: 16px;
+      gap: 12px 18px;
+      margin-bottom: 14px;
       flex-wrap: wrap;
     }
 
     .logo-item {
-      height: 52px;
-      max-width: 110px;
+      height: 44px;
+      max-width: 95px;
       object-fit: contain;
     }
 
@@ -183,10 +183,11 @@
 <body>
 
   <div class="container">
-    <!-- Header with 3 Logos -->
+    <!-- Header with 4 Logos -->
     <div class="header">
       <div class="logos-container">
         <img src="logo-buffaloback.png" alt="Buffalo Back" class="logo-item" onerror="this.style.display='none'">
+        <img src="logo-kaithota.png" alt="Kai Thota" class="logo-item" onerror="this.style.display='none'">
         <img src="logo-16doddi.png" alt="16 Doddi Trust" class="logo-item" onerror="this.style.display='none'">
         <img src="logo-ragihalli.png" alt="The Ragihalli Collective" class="logo-item" onerror="this.style.display='none'">
       </div>
@@ -203,7 +204,16 @@
       <span class="card-action">📄</span>
     </a>
 
-    <!-- 2. Kai Thota Subscription -->
+    <!-- 2. Store Location (Google Maps) -->
+    <a href="PASTE_YOUR_GOOGLE_MAPS_LINK_HERE" class="card" target="_blank" rel="noopener">
+      <div class="card-content">
+        <span class="card-title">Visit the Buffalo Back Store</span>
+        <span class="card-desc">Get directions on Google Maps</span>
+      </div>
+      <span class="card-action">📍</span>
+    </a>
+
+    <!-- 3. Kai Thota Subscription -->
     <a href="https://kaithota.in" class="card" target="_blank" rel="noopener">
       <div class="card-content">
         <span class="card-title">Kai Thota CSA Subscription</span>
@@ -212,7 +222,7 @@
       <span class="card-action">→</span>
     </a>
 
-    <!-- 3. 16 Doddi Trust -->
+    <!-- 4. 16 Doddi Trust -->
     <a href="https://16doddi.org" class="card" target="_blank" rel="noopener">
       <div class="card-content">
         <span class="card-title">16 Doddi Trust</span>
@@ -221,16 +231,16 @@
       <span class="card-action">→</span>
     </a>
 
-    <!-- 4. WhatsApp Direct Order & Queries -->
+    <!-- 5. WhatsApp Direct Order & Queries -->
     <a href="https://wa.me/919148446911?text=Hi%20Buffalo%20Back%2C%20I%20would%20like%20to%20place%20an%20order%20from%20the%20Ragihalli%20catalogue" class="card whatsapp-card" target="_blank" rel="noopener">
       <div class="card-content">
         <span class="card-title">Order via WhatsApp</span>
-        <span class="card-desc">+91 91484 46911 • Instant orders & questions</span>
+        <span class="card-desc">+91 91484 46911 • Instant orders & queries</span>
       </div>
       <span class="card-action">💬</span>
     </a>
 
-    <!-- 5. Instagram Channels -->
+    <!-- 6. Instagram Channels -->
     <div class="section-title">Follow Our Community</div>
     <div class="social-grid">
       <a href="https://instagram.com/buffaloback" class="social-btn" target="_blank" rel="noopener">

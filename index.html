@@ -3,16 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buffalo Back Collective | Links & Store</title>
+  <title>Buffalo Back Collective & Trust Initiatives</title>
   <style>
     :root {
-      --bg: #F9F7F2;
+      --bg: #F8F6F0;
       --card-bg: #FFFFFF;
-      --text-main: #2C3527;
-      --text-muted: #5F6B58;
-      --accent-green: #3F5E38;
-      --accent-hover: #314A2C;
-      --border: #E5E0D5;
+      --text-main: #273022;
+      --text-muted: #5E6957;
+      --accent-green: #37532F;
+      --border: #E2DDD2;
       --whatsapp: #25D366;
     }
 
@@ -24,7 +23,7 @@
       color: var(--text-main);
       display: flex;
       justify-content: center;
-      padding: 32px 16px 48px;
+      padding: 28px 16px 44px;
     }
 
     .container {
@@ -33,21 +32,29 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 12px;
     }
 
+    /* Multi-Logo Header */
     .header {
+      width: 100%;
       text-align: center;
       margin-bottom: 8px;
     }
 
-    .avatar {
-      width: 88px;
-      height: 88px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid var(--accent-green);
-      margin-bottom: 12px;
+    .logos-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo-item {
+      height: 52px;
+      max-width: 110px;
+      object-fit: contain;
     }
 
     h1 {
@@ -57,18 +64,19 @@
     }
 
     p.bio {
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       color: var(--text-muted);
       margin-top: 4px;
       line-height: 1.4;
     }
 
+    /* Action Cards */
     .card {
       width: 100%;
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 16px 20px;
+      padding: 15px 18px;
       text-decoration: none;
       color: var(--text-main);
       display: flex;
@@ -92,11 +100,11 @@
 
     .card-title {
       font-weight: 600;
-      font-size: 1rem;
+      font-size: 0.98rem;
     }
 
     .card-desc {
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
     }
 
@@ -110,20 +118,21 @@
       border-left: 4px solid var(--whatsapp);
     }
 
+    /* Social Section */
     .section-title {
       width: 100%;
-      font-size: 0.78rem;
+      font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
       color: var(--text-muted);
-      margin: 12px 0 2px 4px;
+      margin: 10px 0 2px 4px;
       font-weight: 700;
     }
 
     .social-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      gap: 8px;
       width: 100%;
     }
 
@@ -131,7 +140,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 12px 8px;
+      padding: 12px 6px;
       text-align: center;
       text-decoration: none;
       color: var(--text-main);
@@ -142,53 +151,86 @@
 
     .social-btn span {
       display: block;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       color: var(--text-muted);
       font-weight: normal;
+      margin-top: 2px;
     }
 
     .social-btn:hover {
       border-color: var(--accent-green);
       color: var(--accent-green);
     }
+
+    /* Footer */
+    .contact-row {
+      display: flex;
+      gap: 6px;
+      width: 100%;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .contact-row a {
+      color: var(--accent-green);
+      text-decoration: none;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <!-- Main Header -->
+    <!-- Header with 3 Logos -->
     <div class="header">
-      <img src="logo.png" alt="Buffalo Back Collective" class="avatar" onerror="this.style.display='none'">
+      <div class="logos-container">
+        <img src="logo-buffaloback.png" alt="Buffalo Back" class="logo-item" onerror="this.style.display='none'">
+        <img src="logo-16doddi.png" alt="16 Doddi Trust" class="logo-item" onerror="this.style.display='none'">
+        <img src="logo-ragihalli.png" alt="The Ragihalli Collective" class="logo-item" onerror="this.style.display='none'">
+      </div>
       <h1>Buffalo Back Collective</h1>
-      <p class="bio">Natural farming, indigenous produce, and village livelihoods from Ragihalli.</p>
+      <p class="bio">Natural farming, indigenous produce, and village livelihoods.</p>
     </div>
 
-    <!-- Core Actions -->
+    <!-- 1. Product Catalogue (PDF) -->
+    <a href="catalogue.pdf" class="card" target="_blank" rel="noopener">
+      <div class="card-content">
+        <span class="card-title">Ragihalli Product Catalogue</span>
+        <span class="card-desc">Stone-ground flours, laddus, snacks & pantry staples</span>
+      </div>
+      <span class="card-action">📄</span>
+    </a>
+
+    <!-- 2. Kai Thota Subscription -->
     <a href="https://kaithota.in" class="card" target="_blank" rel="noopener">
       <div class="card-content">
         <span class="card-title">Kai Thota CSA Subscription</span>
-        <span class="card-desc">Weekly farm harvests & collective membership</span>
+        <span class="card-desc">Weekly organic harvest shares & farm updates</span>
       </div>
       <span class="card-action">→</span>
     </a>
 
-    <a href="https://kaithota.in/products" class="card" target="_blank" rel="noopener">
+    <!-- 3. 16 Doddi Trust -->
+    <a href="https://16doddi.org" class="card" target="_blank" rel="noopener">
       <div class="card-content">
-        <span class="card-title">Shop Ragihalli Products</span>
-        <span class="card-desc">Handmade staples, ragi mixes & fresh produce</span>
+        <span class="card-title">16 Doddi Trust</span>
+        <span class="card-desc">Land stewardship, community initiatives & rural research</span>
       </div>
       <span class="card-action">→</span>
     </a>
 
-    <a href="https://wa.me/9148446911?text=Hi%20Buffalo%20Back%2C%20I%20have%20an%20inquiry" class="card whatsapp-card" target="_blank" rel="noopener">
+    <!-- 4. WhatsApp Direct Order & Queries -->
+    <a href="https://wa.me/919148446911?text=Hi%20Buffalo%20Back%2C%20I%20would%20like%20to%20place%20an%20order%20from%20the%20Ragihalli%20catalogue" class="card whatsapp-card" target="_blank" rel="noopener">
       <div class="card-content">
-        <span class="card-title">Chat with Us on WhatsApp</span>
-        <span class="card-desc">Orders, farm visits & bulk inquiries</span>
+        <span class="card-title">Order via WhatsApp</span>
+        <span class="card-desc">+91 91484 46911 • Instant orders & questions</span>
       </div>
       <span class="card-action">💬</span>
     </a>
 
-    <!-- Social Accounts -->
+    <!-- 5. Instagram Channels -->
     <div class="section-title">Follow Our Community</div>
     <div class="social-grid">
       <a href="https://instagram.com/buffaloback" class="social-btn" target="_blank" rel="noopener">
@@ -203,6 +245,12 @@
         Ragihalli
         <span>@ragihalli...</span>
       </a>
+    </div>
+
+    <!-- Footnote Contact -->
+    <div class="contact-row">
+      <span>Email:</span>
+      <a href="mailto:weare@buffaloback.in">weare@buffaloback.in</a>
     </div>
   </div>
 
